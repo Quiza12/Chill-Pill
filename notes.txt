@@ -1,0 +1,23 @@
+Sites:
+
+Booking.com
+
+.msg_low_avail_block
+.js_sr_persuation_msg
+.lastbooking
+.sr_no_desc_users js_sr_persuation_msg
+
+Expedia
+
+.urgencyContainer secondary
+.bookingVelocitySection bookingVelocity secondary gt-mobile
+.lastBookedSection lastBooked secondary
+
+Trivago
+
+HotelsCombined
+
+Kayak
+
+.Hotels-Results-HotelPrivateRatesBanner
+.col-right-rail rail-container

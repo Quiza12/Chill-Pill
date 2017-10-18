@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chill Pill",
+  "description": "This extension removes all of the high-pressure elements that booking sites (like Expedia and Booking.com) use to try and rush you into purchasing.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
