@@ -53,7 +53,7 @@ function getCurrentTabUrl(callback) {
  * @param {string} color The new background color.
  */
 function changeBackgroundColor(color) {
-  var script = 'document.body.style.backgroundColor="' + color + '";';
+  var script = 'document.getElementById(\'main_body\').style.display = \'none\';';
   // See https://developer.chrome.com/extensions/tabs#method-executeScript.
   // chrome.tabs.executeScript allows us to programmatically inject JavaScript
   // into a page. Since we omit the optional first argument "tabId", the script

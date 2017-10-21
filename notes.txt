@@ -1,3 +1,5 @@
+Will be hiding, as deleting DOM elements requires deleting parent elements, also, which can get messy.
+
 Sites:
 
 Booking.com
