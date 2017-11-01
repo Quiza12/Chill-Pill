@@ -7,7 +7,14 @@ Booking.com
 .msg_low_avail_block
 .js_sr_persuation_msg
 .lastbooking
-.sr_no_desc_users js_sr_persuation_msg
+.sr_no_desc_users
+.lastbooked-style-bold
+.sr_item--soldout
+.soldout_property
+.soldout_3rd_pos
+.ribbon
+.js-fly-content-tooltip
+.price scarcity_color
 
 Expedia
 
@@ -17,9 +24,20 @@ Expedia
 
 Trivago
 
+Trivago is actually pretty good - maybe don't include.
+
 HotelsCombined
 
 Kayak
 
 .Hotels-Results-HotelPrivateRatesBanner
 .col-right-rail rail-container
+
+
+"matches": [
+  "*://*.booking.com/*",
+  "*://*.expedia.com/*",
+  "*://*.kayak.com/*",
+  "*://*.hotelscombined.com/*",
+  "*://*.trivago.com/*"
+],

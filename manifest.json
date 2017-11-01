@@ -2,15 +2,49 @@
   "manifest_version": 2,
 
   "name": "Chill Pill",
+  "version": "1.0",
+  "author": "Matthew Querzoli",
   "description": "This extension removes all of the high-pressure elements that booking sites (like Expedia and Booking.com) use to try and rush you into purchasing.",
   "version": "1.0",
+
+  "icons": { "16": "icons/icon16.png",
+             "48": "icons/icon48.png",
+            "128": "icons/icon128.png" },
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
   "permissions": [
-    "activeTab",
-    "storage"
-  ]
+    "*://www.booking.com/*",
+    "*://www.expedia.com/*",
+    "*://www.expedia.com.au/*",
+    "*://www.hotelscombined.com/*",
+    "*://www.hotelscombined.com.au/*",
+    "*://www.kayak.com/*",
+    "*://www.kayak.com.au/*",
+    "*://www.trivago.com/*",
+    "*://www.trivago.com.au/*",
+    "*://www.wotif.com/*"
+  ],
+
+  "content_scripts": [
+      {
+        "matches": [
+          "*://www.booking.com/*",
+          "*://www.expedia.com/*",
+          "*://www.expedia.com.au/*",
+          "*://www.hotelscombined.com/*",
+          "*://www.hotelscombined.com.au/*",
+          "*://www.kayak.com/*",
+          "*://www.kayak.com.au/*",
+          "*://www.trivago.com/*",
+          "*://www.trivago.com.au/*",
+          "*://www.wotif.com/*"
+        ],
+        "js": ["chillOut.js"],
+        "run_at": "document_end"
+      }
+    ]
 }
